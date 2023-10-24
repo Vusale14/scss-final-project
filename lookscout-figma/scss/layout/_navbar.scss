@@ -1,0 +1,66 @@
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+
+.navbar-right {
+    display: flex;
+    column-gap: 16px;
+    cursor: pointer;
+
+    
+#badge {
+    display: inline-flex;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+    margin-top: -8px;
+
+}
+
+}
+
+.navbar-left {
+    @include text-formatter($gray-white, 35.2px, 700, 150%, Lexend);
+    cursor: pointer;
+}
+
+@include for-size(tablet) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        
+        .navbar-right {
+            display: flex;
+            column-gap: 16px;
+            cursor: pointer;
+        
+            
+        #badge {
+            display: inline-flex;
+            height: 25px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -40px;
+            margin-top: -8px;
+        
+        }
+        
+        }
+        
+        .navbar-left {
+            @include text-formatter($gray-white, 35.2px, 700, 150%, Lexend);
+            cursor: pointer;
+        }
+        
+    }
+
+  }
+
+}

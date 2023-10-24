@@ -1,0 +1,16 @@
+.tracking-header {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/tracking/mix-color2.png), url(../assets/images/tracking/mix-color1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-size(tablet) {
+        width: 1122px;
+        height: 100%;
+        background-image: url(../assets/images/tracking/mix-color2.png), url(../assets/images/tracking/mix-color1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+

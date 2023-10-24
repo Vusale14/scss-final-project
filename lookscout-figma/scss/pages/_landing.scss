@@ -1,0 +1,306 @@
+.landing-section {
+    border-radius: 8px;
+    border: 1px solid $grey;
+    width: 1062px;
+    height: 653px;
+    display: flex;
+    padding: 10px 10px 16px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: linear-gradient(104deg, rgba(255, 255, 255, 0.24) -4.12%, rgba(0, 0, 0, 0.00) 48.74%, rgba(255, 255, 255, 0.16) 97.56%);
+    backdrop-filter: blur(20px);
+    margin-left: 28px;
+
+    h3 {
+        @include text-formatter($gray-white, 16px, 400, 150%, Lexend);
+    } 
+
+    .search {
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(104deg, rgba(255, 255, 255, 0.24) -4.12%, rgba(0, 0, 0, 0.00) 48.74%, rgba(255, 255, 255, 0.16) 97.56%);
+        display: flex;
+        min-height: 40px;
+        padding: 8px 16px;
+        align-items: center;
+        width: 349px;
+        height: 24px;
+        cursor: pointer;
+
+        h4 {
+            @include text-formatter($gray-white, 12px, 700, 150%, Lexend);
+            width: 59px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+
+    #see {
+        @include text-formatter($gray-white, 16px, 400, 150%, Lexend);
+        margin-left: 900px;
+        margin-top: -45px;
+    }
+
+    .solid {
+        width: 1036px;
+        height: 0.5px;
+        max-width: 1056px;
+        opacity: 0.26;
+        background: #E9ECEF;
+        margin-top: 10px;
+    }
+
+    .table1, .table2, .table3, .table4, .table5, .table6, .table7, .table8, .table9, .table10, .table11 {
+        display: flex;
+
+       .number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9, .number10, .number11 {
+        display: flex;
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+        padding: 8px 16px;
+        align-items: center;
+        border-radius: 4px;
+        background: var(--Light-dark, #161616);
+
+        p {
+            color: #FFF;
+        }
+
+       }
+
+       .session {
+        display: flex;
+        min-width: 400px;
+        min-height: 40px;
+        padding: 8px 16px;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: var(--Light-dark, #161616);
+        margin-left: 10px;
+
+        h4 {
+            @include text-formatter($green, 12px, 700, 150%, Lexend);
+        }
+
+       }
+
+       .direct, .organic, .display, .paid, .unassigned, .email, .referral, .video, .social, .external {
+        display: flex;
+        min-width: 400px;
+        min-height: 40px;
+        padding: 8px 16px;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: var(--Light-dark, #161616);
+        margin-left: 10px;
+
+        h4 {
+            @include text-formatter($gray-white, 12px, 700, 150%, Lexend);
+        }
+
+       }
+
+       .users, .sessions, .engaged {
+        width: 180px;
+        height: 24px;
+        display: flex;
+        min-height: 40px;
+        padding: 8px 16px;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: var(--Light-dark, #161616);
+        margin-left: 10px;
+
+        h4 {
+            @include text-formatter($green, 12px, 700, 150%, Lexend);
+        }
+
+    }
+
+    .numeral1, .numeral2, .numeral3, .numeral4, .numeral5, .numeral6, .numeral7, .numeral8, .numeral9, .numeral10, .numeral11, .numeral12, .numeral13, .numeral14, .numeral15, .numeral16, .numeral17, .numeral18, .numeral19, .numeral20, .numeral21, .numeral22, .numeral23, .numeral24, .numeral25, .numeral26, .numeral27, .numeral28, .numeral29, .numeral30 {
+        width: 180px;
+        height: 24px;
+        display: flex;
+        min-height: 40px;
+        padding: 8px 16px;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: var(--Light-dark, #161616);
+        margin-left: 10px;
+
+        h4 {
+            @include text-formatter($gray-white, 12px, 700, 150%, Lexend);
+        }
+
+    }
+
+  }
+
+  @include for-size(tablet) {
+    .landing-section {
+        border-radius: 8px;
+        border: 1px solid #8D8D8D;
+        width: 840px;
+        height: 640px;
+        display: flex;
+        padding: 10px 10px 16px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        background: linear-gradient(104deg, rgba(255, 255, 255, 0.24) -4.12%, rgba(0, 0, 0, 0.00) 48.74%, rgba(255, 255, 255, 0.16) 97.56%);
+        backdrop-filter: blur(20px);
+        margin-left: 28px;
+    
+        h3 {
+            @include text-formatter($gray-white, 16px, 400, 150%, Lexend);
+        } 
+    
+        .search {
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: linear-gradient(104deg, rgba(255, 255, 255, 0.24) -4.12%, rgba(0, 0, 0, 0.00) 48.74%, rgba(255, 255, 255, 0.16) 97.56%);
+            display: flex;
+            min-height: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            width: 349px;
+            height: 24px;
+            cursor: pointer;
+    
+            h4 {
+                @include text-formatter($gray-white, 12px, 700, 150%, Lexend);
+                width: 59px;
+                padding-left: 10px;
+                cursor: pointer;
+            }
+        }
+    
+    
+        #see {
+            @include text-formatter($gray-white, 16px, 400, 150%, Lexend);
+            margin-left: 900px;
+            margin-top: -45px;
+        }
+    
+        .solid {
+            width: 1036px;
+            height: 0.5px;
+            max-width: 1056px;
+            opacity: 0.26;
+            background: #E9ECEF;
+            margin-top: 10px;
+        }
+    
+        .table1, .table2, .table3, .table4, .table5, .table6, .table7, .table8, .table9, .table10, .table11 {
+            display: flex;
+    
+           .number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9, .number10, .number11 {
+            display: flex;
+            min-width: 40px;
+            max-width: 40px;
+            min-height: 40px;
+            max-height: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            border-radius: 4px;
+            background: var(--Light-dark, #161616);
+    
+            p {
+                color: #FFF;
+            }
+    
+           }
+    
+           .session {
+            display: flex;
+            min-width: 400px;
+            min-height: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            flex: 1 0 0;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: var(--Light-dark, #161616);
+            margin-left: 10px;
+    
+            h4 {
+                @include text-formatter($green, 12px, 700, 150%, Lexend);
+            }
+    
+           }
+    
+           .direct, .organic, .display, .paid, .unassigned, .email, .referral, .video, .social, .external {
+            display: flex;
+            min-width: 400px;
+            min-height: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            flex: 1 0 0;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: var(--Light-dark, #161616);
+            margin-left: 10px;
+    
+            h4 {
+                @include text-formatter($gray-white, 12px, 700, 150%, Lexend);
+            }
+    
+           }
+    
+           .users, .sessions, .engaged {
+            width: 180px;
+            height: 24px;
+            display: flex;
+            min-height: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            flex: 1 0 0;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: var(--Light-dark, #161616);
+            margin-left: 10px;
+    
+            h4 {
+                @include text-formatter($green, 12px, 700, 150%, Lexend);
+            }
+    
+        }
+    
+        .numeral1, .numeral2, .numeral3, .numeral4, .numeral5, .numeral6, .numeral7, .numeral8, .numeral9, .numeral10, .numeral11, .numeral12, .numeral13, .numeral14, .numeral15, .numeral16, .numeral17, .numeral18, .numeral19, .numeral20, .numeral21, .numeral22, .numeral23, .numeral24, .numeral25, .numeral26, .numeral27, .numeral28, .numeral29, .numeral30 {
+            width: 180px;
+            height: 24px;
+            display: flex;
+            min-height: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            flex: 1 0 0;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: var(--Light-dark, #161616);
+            margin-left: 10px;
+    
+            h4 {
+                @include text-formatter($gray-white, 12px, 700, 150%, Lexend);
+            }
+    
+        }
+    
+      }
+  }
+
+}
+
+
+}

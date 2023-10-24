@@ -1,0 +1,49 @@
+@mixin for-size($screen){
+    @if $screen == tablet {
+        @media screen and (max-width: $desktop-container-width) {
+            @content;
+        }
+    }@else if $screen == mobile {
+        @media screen and (max-width: $tablet-container-width) {
+            @content;
+    }
+  } 
+}
+
+
+@mixin text-formatter(
+    $color, 
+    $size, 
+    $weight, 
+    $height, 
+    $Family,
+    $hoverColor: $color, 
+    $style: normal
+) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    font-family: $Family;
+    font-style: $style;
+    transition: 0.4s;
+
+    &:hover {
+        color: $hoverColor;
+    }
+}
+
+
+@mixin container() {
+    width: $desktop-container-width;
+    margin: auto;
+    padding: 0 16px;
+
+    @include for-size(tablet) {
+        width: $tablet-container-width;
+    }
+    @include for-size(mobile) {
+        width: $mobile-container-width;
+        padding: 0 12px;
+    }
+}
